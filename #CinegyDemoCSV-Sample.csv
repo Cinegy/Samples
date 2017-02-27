@@ -1,42 +1,42 @@
 //start,duration,flags,name,id,description,comments,in,out,date
 12;30;00;00,00;01;00;00,C,First item,ITEM001,First item description,First item comments,,,31/12/2015
-,00;01;00;00,,Second,ITEM002,,Item with IN point,00;00;10;00
-,00;01;00;00,,Third,ITEM003,,Item with OUT point,,00;00;50;00
-,00;15;00;00,,Next item,ITEM003,Secondary Event Sample
-N,"This is just a comment line you can insert into the playlist. Please, note that you can insert comma in the value when ""double quote"" it"
-,00;15;00;00,D,Dummy item
-
-//predefined Type event sample - using CG layer 1
-//type,offset,offsetFrom,name,description,id,variables xml
-CG_1,00;00;15;00,,Demo CG,,CG_FILENAME
-CG_1,-00;00;15;00,E,Hide CG,,*HIDE*
-
-//generic secondary event sample
+,00;01;00;00,,Second,ITEM002,,Item with IN point,00;00;10;00,,
+,00;01;00;00,,Third,ITEM003,,Item with OUT point,,00;00;50;00,
+,00;15;00;00,,Next item,ITEM003,Secondary Event Sample,,,,
+N,"This is just a comment line you can insert into the playlist. Please, note that you can insert comma in the value when ""double quote"" it",,,,,,,,
+,00;15;00;00,D,Dummy item,,,,,,
+,,,,,,,,,
+//predefined Type event sample - using CG layer 1,,,,,,,,,
+//type,offset,offsetFrom,name,description,id,variables xml,,,
+CG_1,00;00;15;00,,Demo CG,,CG_FILENAME,,,,
+CG_1,-00;00;15;00,E,Hide CG,,*HIDE*,,,,
+,,,,,,,,,
+//generic secondary event sample,,,,,,,,,
 //type,offset,offsetFrom,name,description,device,command,option1,option2,option3
-S,00;00;15;00,E,Secondary,,VIKINX,crosspoint,001,015
-
-//program sample
-//program,name,description
-P,Explicit Program,Sample Program Description
-
-//block sample
-//block,name,type,AvailId,skipped
-B,Explicit Block
-,00;15;00;00,LM,Live item,,Live item with manual end
-,00;05;00;00,J,Join-in-progress,ITEM006,Item with join-in-progress flag
-,00;15;00;00,L,Live Item,,Live item with explicit duration
-,00;05;00;00,S,Loop start,ITEM005
-,00;05;00;00,,Loop body,ITEM006
-,00;05;00;00,,Loop body,ITEM001
-,00;05;00;00,E,Loop end,ITEM002
-,00;05;00;00,,Next item,ITEM006
-
-//skipped block
-B,Auto OptOut Block,A,ID001,S
-,00;05;00;00,,Next item,ITEM006,"Sample, with comma inside"
-,00;05;00;00,,Next item,ITEM001,"Sample with ""quoted"" text inside"
-
-//automatic opt out block
-B,Auto OptOut Block,A,ID001
-,00;05;00;00,,Next item,ITEM006
-,00;05;00;00,,Next item,ITEM001
+S,00;00;15;00,E,Secondary,,VIKINX,crosspoint,001,015,
+,,,,,,,,,
+//program sample,,,,,,,,,
+//program,name,description,,,,,,,
+P,Explicit Program,Sample Program Description,,,,,,,
+,,,,,,,,,
+//block sample,,,,,,,,,
+//block,name,type,AvailId,skipped,,,,,
+B,Explicit Block,,,,,,,,
+,00;15;00;00,LM,Live item,,Live item with manual end,,,,
+,00;05;00;00,J,Join-in-progress,ITEM006,Item with join-in-progress flag,,,,
+,00;15;00;00,L,Live Item,,Live item with explicit duration,,,,
+,00;05;00;00,S,Loop start,ITEM005,,,,,
+,00;05;00;00,,Loop body,ITEM006,,,,,
+,00;05;00;00,,Loop body,ITEM001,,,,,
+,00;05;00;00,E,Loop end,ITEM002,,,,,
+,00;05;00;00,,Next item,ITEM006,,,,,
+,,,,,,,,,
+//skipped block,,,,,,,,,
+B,Auto OptOut Block,A,ID001,S,,,,,
+,00;05;00;00,,Next item,ITEM006,"Sample, with comma inside",,,,
+,00;05;00;00,,Next item,ITEM001,"Sample with ""quoted"" text inside",,,,
+,,,,,,,,,
+//automatic opt out block,,,,,,,,,
+B,Auto OptOut Block,A,ID001,,,,,,
+,00;05;00;00,,Next item,ITEM006,,,,,
+,00;05;00;00,,Next item,ITEM001,,,,,
