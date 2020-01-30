@@ -1,5 +1,5 @@
 //start,duration,flags,id,name,description,comments,in,out,StartDate,SegmentStart,SegmentStop,SubtitleID
-12;30;00;00,00;01;00;00,C,ITEM001,First item,First item description,First item comments,,,31/12/2015
+12;30;00;00,00;01;00;00,C,ITEM001,First item,First item description,First item comments,,,31/12/2015,,,
 ,00;01;00;00,,ITEM002,Second,,Item with IN point,00;00;10;00,,
 ,00;01;00;00,,ITEM003,Third,,Item with OUT point,,00;00;50;00,
 ,00;15;00;00,,ITEM003,Next item,Secondary Event Sample,,,,
